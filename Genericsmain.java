@@ -5,13 +5,13 @@ public class Genericsmain {
 	
 	    public static void main(String[] args) {
 	     System.out.println("welcome to generics program");
-	     MaxFloat maxFloat = new MaxFloat();
+	     MaxString maxString = new MaxString();
 	        System.out.println("Test case 1");
-	        maxFloat.maxvalue(7.8F,5.5F,6.3F);
+	        maxString.maxvalue("Peach","Apple","Banana");
 	        System.out.println("Test case 2");
-	        maxFloat.maxvalue(5.2F,6.3F,4.5F);
+	        maxString.maxvalue("Apple","Zach","Banana");
 	        System.out.println("Test case 3");
-	        maxFloat.maxvalue(5.2F,6.2F,8.6F);
+	        maxString.maxvalue("Apple","Banana","Class");
 	    }
 	}
 
