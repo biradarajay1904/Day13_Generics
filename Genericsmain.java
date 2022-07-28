@@ -5,11 +5,14 @@ public class Genericsmain {
 	
 	    public static void main(String[] args) {
 	     System.out.println("welcome to generics program");
-	     MaxValue<Integer> maxValue = new MaxValue<>(5,4,3);
+	     Integer[] intArray = {5,7,6,8};
+	        Float[] floatArray = {5.3F,9.2F,3.4F,8.6F};
+	        String[] stringArray = {"vipul","ajay","sam","anusha"};
+	        MaxValue<Integer> maxValue = new MaxValue<>(intArray);
 	        maxValue.testMaximum();
-	        MaxValue<Float> maxValue1 = new MaxValue<>(5.2F,8.3F,3.2F);
+	        MaxValue<Float> maxValue1 = new MaxValue<>(floatArray);
 	        maxValue1.testMaximum();
-	        MaxValue<String> maxValue2 = new MaxValue<>("Peach","Apple","Zach");
+	        MaxValue<String> maxValue2 = new MaxValue<>(stringArray);
 	        maxValue2.testMaximum();
 	    }
 	}
